@@ -1,22 +1,36 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
+import ExperienceItem from "./ExperienceItem.astro";
+import Link from "./icons/Link.astro";
 const EXPERIENCIE = [
   {
     date: "Actualmente...",
-    title: "Creador de Contenido",
-    company: "Twitch",
+    title: "Dysam facturas",
+    company: "Dysam",
     description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
+      "Un proyecto dedicado a simplificar la gestión de facturas. Con un enfoque centrado en la eficiencia y la facilidad de uso, este sistema proporciona herramientas para crear, gestionar y rastrear facturas de manera intuitiva. ",
   },
   {
-    date: "Septiembre 2022",
-    title: "Principal Frontend Engineer",
-    company: "Adevinta Spain",
+    date: "Diciembre 2023",
+    title: "Sistema de registro y visualización de facturas",
+    company: "Olio & Pomodoro",
     description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+      "Olio Pomodoro, diseñado para la eficiencia empresarial, ofrece un acceso seguro mediante un formulario de inicio de sesión. Simplifica el proceso de registro y almacenamiento de facturas a través de un formulario intuitivo. Agiliza la gestión de productos con la opción de añadir categorías. La interfaz presenta datos esenciales, como hora de factura, categoría, venta, tipo de pago y total, en una tabla organizada. Optimiza tu día a día empresarial con Olio Pomodoro, una herramienta integral para el control efectivo de transacciones y tiempo.",
   },
-]
+  {
+    date: "Mayo 2023",
+    title: "Sistema de registro y envío de facturas",
+    company: "Dysam",
+    description:
+      "Aplicación con dos módulos, administrador y usuario. El de administrador permite la subida de archivos “pdf” y enlazarlo con un código generado el cual es enviado al correo de los usuarios. El módulo de usuarios permite la consulta de esos archivos mediante el código generado",
+  },
+  {
+    date: "Nov 2023",
+    title: "Reportes Excel",
+    company: "Dysam",
+    description:
+      "Esta aplicación web desarrollada con React.js presenta una interfaz intuitiva para la gestión de registros relacionados con llamadas y saldos pendientes. Permite la carga de datos desde archivos Excel, los cuales son luego visualizados en una tabla paginada, facilitando la búsqueda y revisión de información clave como el nombre del cliente, la fecha y hora de la llamada, número de factura, saldo pendiente, días de vencimiento, fecha y comentarios asociados. ",
+  },
+];
 ---
 
 <ol class="relative mt-16">
