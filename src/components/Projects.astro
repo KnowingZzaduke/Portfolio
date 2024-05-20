@@ -4,8 +4,12 @@ import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 
 const TAGS = {
-  NEXT: {
+  REACT: {
     name: "React.js",
+    class: "bg-black text-white",
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
     class: "bg-black text-white",
   },
   TAILWIND: {
@@ -16,23 +20,36 @@ const TAGS = {
     name: "Sass",
     class: "bg-[#003159] text-white",
   },
-  REACT: {
-    name: "React.js",
+  PHP: {
+    name: "PHP",
     class: "bg-black text-white",
   },
   CSS: {
     name: "CSS",
     class: "bg-[#003159] text-white",
   },
+  SQL: {
+    name: "SQL",
+    class: "bg-black text-white",
+  }
 };
 const PROJECTS = [
   {
     title: "Whatsive",
     description:
       "Una API de WhatsApp que permite el envío masivo de mensajes y archivos, sin límite a los contactos seleccionados. A su vez permite la creación de difusiones permitiendo agregar los contactos que se deseen.",
-    link: "",
+    link: "https://portfolio-pi-orcin-19.vercel.app/",
     image: "/projects/whatsive.webp",
     tags: [TAGS.REACT, TAGS.SASS],
+    github: "",
+  },
+  {
+    title: "Luis Courses",
+    description:
+      "Una plataforma para la venta de cursos sobre finanzas personaales y familiares",
+    link: "https://luis-coach-courses.vercel.app/",
+    image: "/projects/luis-courses.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.PHP, TAGS.SQL, TAGS.TYPESCRIPT],
     github: "",
   },
 ];
@@ -72,7 +89,6 @@ const PROJECTS = [
 
             <div class="mt-2 text-gray-700 dark:text-gray-400">
               <p>{description}</p>
-              <span class="underline text-sm font-semibold">En desarrollo</span>
             </div>
             <footer class="flex items-end justify-start mt-4 gap-x-4">
               {github && (
