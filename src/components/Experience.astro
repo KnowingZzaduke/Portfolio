@@ -1,6 +1,36 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro";
-import Link from "./icons/Link.astro";
+const TAGS = {
+  REACT: {
+    name: "React.js",
+    class: "bg-black text-white",
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-black text-white",
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+  },
+  SASS: {
+    name: "Sass",
+    class: "bg-[#003159] text-white",
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-black text-white",
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#003159] text-white",
+  },
+  SQL: {
+    name: "SQL",
+    class: "bg-black text-white",
+  }
+};
+
 const EXPERIENCIE = [
   {
     date: "Febrero 2023 - Abril 2024",
@@ -8,6 +38,8 @@ const EXPERIENCIE = [
     company: "Dysam",
     description:
       "Un proyecto dedicado a simplificar la gestión de facturas. Con un enfoque centrado en la eficiencia y la facilidad de uso, este sistema proporciona herramientas para crear, gestionar y rastrear facturas de manera intuitiva. ",
+      link: "Restricciones de la empresa",
+      tags: [TAGS.REACT, TAGS.PHP, TAGS.SQL, TAGS.SASS]
   },
   {
     date: "Octubre 2023 - Noviembre 2023",
@@ -15,6 +47,8 @@ const EXPERIENCIE = [
     company: "Dysam",
     description:
       "Aplicación con dos módulos, administrador y usuario. El de administrador permite la subida de archivos “pdf” y enlazarlo con un código generado el cual es enviado al correo de los usuarios. El módulo de usuarios permite la consulta de esos archivos mediante el código generado",
+      link: "Restricciones de la empresa",
+      tags: [TAGS.REACT, TAGS.PHP, TAGS.SQL, TAGS.SASS]
   },
   {
     date: "Marzo 2023 - Mayo 2023",
@@ -22,6 +56,16 @@ const EXPERIENCIE = [
     company: "Dysam",
     description:
       "Esta aplicación web desarrollada con React.js presenta una interfaz intuitiva para la gestión de registros relacionados con llamadas y saldos pendientes. Permite la carga de datos desde archivos Excel, los cuales son luego visualizados en una tabla paginada, facilitando la búsqueda y revisión de información clave como el nombre del cliente, la fecha y hora de la llamada, número de factura, saldo pendiente, días de vencimiento, fecha y comentarios asociados. ",
+      link: "Restricciones de la empresa",
+      tags: [TAGS.REACT, TAGS.PHP, TAGS.SQL, TAGS.SASS]
+  },
+  {
+    date: "Abril 2023 - Actualmente",
+    title: "Luis Courses",
+    company: "Luis Gabriel Buelvas Romero",
+    description: "Plataforma web para la venta de cursos sobre finanzas personales y finanzas familiares. Cuenta con dos módulos, el primero va enfocado a intefaces accesibles por los usuarios en donde estos van a interactuar con las funcionalidades para la adquisición de cursos. Por otro lado, el segundo módulo consiste en una dashboard en donde se va a gestionar la organización y subida de los cursos.",
+    link: "https://luis-coach-courses.vercel.app/",
+    tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.PHP, TAGS.SQL]
   },
 ];
 ---

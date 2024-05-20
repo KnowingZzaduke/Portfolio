@@ -40,16 +40,7 @@ const PROJECTS = [
       "Una API de WhatsApp que permite el envío masivo de mensajes y archivos, sin límite a los contactos seleccionados. A su vez permite la creación de difusiones permitiendo agregar los contactos que se deseen.",
     link: "https://portfolio-pi-orcin-19.vercel.app/",
     image: "/projects/whatsive.webp",
-    tags: [TAGS.REACT, TAGS.SASS],
-    github: "",
-  },
-  {
-    title: "Luis Courses",
-    description:
-      "Una plataforma para la venta de cursos sobre finanzas personaales y familiares",
-    link: "https://luis-coach-courses.vercel.app/",
-    image: "/projects/luis-courses.webp",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.PHP, TAGS.SQL, TAGS.TYPESCRIPT],
+    tags: [TAGS.REACT, TAGS.TAILWIND, ],
     github: "",
   },
 ];
@@ -98,7 +89,7 @@ const PROJECTS = [
                 </LinkButton>
               )}
               {link && (
-                <LinkButton href={link}>
+                <LinkButton>
                   <Link class="size-4" />
                   En desarrollo
                 </LinkButton>
